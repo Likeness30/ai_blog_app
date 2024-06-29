@@ -8,6 +8,44 @@
     <!-- Favicon Link -->
     <link rel="icon"  href="favicon.png" type="image/png">
 
+    <!-- Button -->
+    <title> Button Hover Effect</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+	    .button-container {
+		    position: fixed;
+		    top: 10px;
+		    right: 10px;
+		    display: flex;
+		    gap: 10px;
+	    }
+
+	    .button {
+		    padding: 10px 20px;
+		    font-size: 16px;
+		    border: none;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    transition: transform 0.3s, box-shadow 0.3s;
+		    display: inline-flex;
+		    align-items: center;
+		    justify-content: center;
+		    background: #00008B;
+		    color: #fff;
+	    }
+
+	    .button:hover {
+		    transform: scale(1.1);
+		    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+	    }
+</style>
+
+
     <!-- Tailwind CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
@@ -59,10 +97,15 @@
         <div>
             <h1 class="text-3xl font-bold">AI Blog Generator</h1>
         </div>
-        <div>
+        <!--<div>
             <a href="#" class="text-white hover:underline">logout</a>
         </div>
+	-->
     </nav>
+	<div class="button-container">
+		<a href="#" button class="button signup">Sign Up</button></a>
+		<a href="#" button class="button Login">Log In</button></a>
+	</div>
 
     <br>
     <br>
@@ -85,7 +128,7 @@
                 <h2 class="text-xl mb-4 font-semibold">Enter Youtube video link</h2>
                 <div class="flex space-x-4">
                     <input id="Youtube link" type="url" placeholder="Paste Youtube link..." class="flex-grow p-2 border border-blue-400 rounded-l-md">
-                    <button id="GenerateBlogButton" class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors">Generate</button>
+                    <button id="GenerateBlogButton" class="bg-blue-800 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors">Generate</button>
 
                 </div>
              </div>
