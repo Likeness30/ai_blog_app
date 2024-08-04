@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Details</title>
+    <!-- Favicon Link -->
+    <link rel="icon"  href="favicon.png" type="image/png">
+ <!-- Button -->
+ <title> Button Hover Effect</title>
+ <style>
+ body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+         .button-container {
+             position: fixed;
+             top: 10px;
+             right: 10px;
+             display: flex;
+             gap: 10px;
+         }
+ 
+         .button {
+             padding: 10px 20px;
+             font-size: 16px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             transition: transform 0.3s, box-shadow 0.3s;
+             display: inline-flex;
+             align-items: center;
+             justify-content: center;
+             background: #00008B;
+             color: #fff;
+         }
+ 
+         .button:hover {
+             transform: scale(1.1);
+             box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+         }
+ </style>
     <!-- Tailwind Link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
